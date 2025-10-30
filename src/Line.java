@@ -1,17 +1,16 @@
 import interfaces.Shape;
 
-public class Line {
+// Antes: public class Line {
+public class Line implements Shape {
 
-
+   @Override // Es buena práctica usar @Override
    public Shape explodeShape() {
-       System.out.println("Exploding Line into Points");
-         return null;
-      
+       System.out.println("\"Descomponiendo Línea en Puntos\"");
+       return null;
    }
+   
+   @Override
    public void renderShapeToScreen() {
-         System.out.println("Rendering Line to Screen");
-       
+       System.out.println("Renderizando Línea en Pantalla");
    }
-
-
 }
